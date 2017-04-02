@@ -1,0 +1,94 @@
+html {
+    padding: 0;
+    padding-top: 100px;
+    margin: 0;
+}
+
+.btn-flat {
+    border-radius: 50%;
+    padding: 5px;
+}
+.glyphicon {
+     top: 0; 
+}
+
+/* --------------------- 
+--------- panel --------
+--------------------- */
+.panel, 
+.panel .panel-heading {
+    border-radius: 0;
+}
+
+/* --------------------- 
+----- uplaod zone ------
+--------------------- */
+.upload-zone-content {
+    border: 2px dashed #ddd;
+    text-align: center;    
+    height: 300px;  
+    width: 100%;
+    display: table;
+}
+.upload-zone-content input[type=file] {
+    position: absolute;
+    z-index: -9999;
+    top: -9999;
+    left: -9999;
+    opacity: 0;
+}
+.upload-zone-content .upload-zone-drag-and-drop {
+    display: table-cell;
+    vertical-align: middle;
+}
+.upload-zone-content .upload-zone-drag-and-drop .upload-zone-icon {
+    font-size: 56px;
+    color: #337ab7;
+}
+.upload-zone-content .upload-zone-drag-and-drop .upload-zone-input-clone {
+    padding: 11px 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.upload-zone-content .upload-zone-drag-and-drop .upload-zone-input-clone:hover {
+    cursor: pointer;
+}
+
+.upload-zone-list-content {
+    height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.upload-zone-list-content .upload-zone-list {
+    padding-left: 0;
+    list-style: none;
+}
+.upload-zone-list-content .upload-zone-list-item {
+    position: relative;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #e8e8e8;
+    -webkit-animation: fileuploaderSlideIn 0.4s ease;
+    animation: fileuploaderSlideIn 0.4s ease;
+}
+.upload-zone-list-content .upload-zone-list-item .item-preview{
+    position: absolute;
+    font-size: 36px;
+    color: #74809D;
+}
+.upload-zone-list-content .upload-zone-list-item .item-details{
+    display: block;
+    padding-left: 51px;
+    padding-right: 81px;
+    color: #74809D;
+}
+.upload-zone-list-content .upload-zone-list-item .item-actions{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -9px;
+}
+
